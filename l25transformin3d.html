@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transform in 3D</title>
+	<style type="text/css">
+
+
+		*{
+			perspective: 500px;
+		}
+		
+		body{
+			height:100vh;
+
+			display:grid;
+			place-items: center;
+		}
+
+		.container{
+/*			perspective: 500px;*/
+
+/*			default*/
+/*			perspective-origin: center;*/
+
+/*			perspective-origin: top;*/
+/*			perspective-origin: bottom;*/
+/*			perspective-origin: left;*/
+/*			perspective-origin: right;*/
+
+/*			perspective-origin: left top;*/
+/*			perspective-origin: left bottom;*/
+/*			perspective-origin: right top;*/
+/*			perspective-origin: right bottom;*/
+
+							  /*left center*/
+/*			perspective-origin: 0;*/
+ 							  /*left top*/
+/*			perspective-origin: 0 0;*/
+/*			perspective-origin: 0 bottom;*/
+/*			perspective-origin: 100% bottom;*/
+
+/*			perspective-origin: 0 top;*/
+/*			perspective-origin: 100% top;*/
+
+			perspective-origin: 50% 50%;
+
+
+		}
+
+		.container img{
+			width:300px;
+
+			transition: transform 2s linear;
+		}
+
+		.container img:hover{
+/*			transform: rotateX(45deg);*/
+/*			transform: rotateX(90deg);*/
+/*			transform: rotateX(180deg);*/
+/*			transform: rotateX(1turn);*/
+
+/*			transform: rotateX(-45deg);*/
+/*			transform: rotateX(-90deg);*/
+/*			transform: rotateX(-180deg);*/
+
+/*			transform: rotateY(45deg);*/
+/*			transform: rotateY(90deg);*/
+/*			transform: rotateY(180deg);*/
+/*			transform: rotateY(-45deg);*/
+			transform: rotateY(-360deg);
+
+		}
+		
+		
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<img src="./img/cutedog.jpg" alt="dog">
+	</div>
+
+	
+	
+</body>
+</html>
+
+
